@@ -7,7 +7,7 @@
     "start": "node ./dist/application.js",
     "build": "./node_modules/typescript/bin/tsc",
     "staged": "lint-staged",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --fix"
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --fix && tsc --noemit"
   },
   "keywords": [],
   "author": "",
@@ -32,7 +32,8 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint '*/**/*.{js,jsx,ts,tsx}' --fix"
+      "eslint '*/**/*.{js,jsx,ts,tsx}' --fix",
+      "tsc --noemit"
     ],
     "src/**/*.{json,css,scss,md}": [
       "prettier src --fix"

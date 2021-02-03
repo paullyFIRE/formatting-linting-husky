@@ -25,17 +25,17 @@ const apple: IApple = {
 }
 
 const apple2: IApple = {
-  color: 'purple',
+  color: 'red',
   juiciness: 4,
 }
 
+// this comment should change
+
 const pew = async (
   thing: number,
-  somethingElse,
-
-  snake_Case,
+  somethingElse: string,
+  snake_Case: string,
 ) => {
   thing += 5
-
   return null
 }
