@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./dist/application.js",
-    "build": "./node_modules/typescript/bin/tsc",
+    "start": "node ./src/index.js",
     "staged": "lint-staged",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --fix && tsc --noemit"
   },
@@ -14,12 +13,9 @@
   "license": "ISC",
   "dependencies": {
     "husky": "^4.3.8",
-    "lint-staged": "^10.5.3",
-    "typescript": "^4.1.3"
+    "lint-staged": "^10.5.3"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.14.2",
-    "@typescript-eslint/parser": "^4.14.2",
     "eslint": "^7.19.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
@@ -32,8 +28,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint '*/**/*.{js,jsx,ts,tsx}' --fix",
-      "tsc --noemit"
+      "eslint '*/**/*.{js,jsx,ts,tsx}' --fix"
     ],
     "src/**/*.{json,css,scss,md}": [
       "prettier src --fix"
