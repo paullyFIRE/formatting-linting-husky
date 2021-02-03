@@ -10,6 +10,8 @@ function myName
   }
 }
 
+// comment change
+
 interface IApple {
   juiciness: number
   color: 'green' | 'red'
