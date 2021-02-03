@@ -1,16 +1,16 @@
-console.log('hello');
+console.log('hello')
 
-let somethingJank = 5;
+const somethingJank = 5
 
-function myName
-(ishere:number) {
-  switch(true){
+function myName(ishere: number) {
+  switch (true) {
     default:
       return
   }
 }
 
 // comment change
+// another comment
 
 interface IApple {
   juiciness: number

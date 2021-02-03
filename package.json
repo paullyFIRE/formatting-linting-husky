@@ -31,8 +31,11 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "lint"
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint '*/**/*.{js,jsx,ts,tsx}' --fix"
+    ],
+    "src/**/*.{json,css,scss,md}": [
+      "prettier src --fix"
     ]
   }
 }
